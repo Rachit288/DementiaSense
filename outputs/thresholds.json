@@ -1,0 +1,14 @@
+{
+  "A_screening": {
+    "algorithm": "LogReg",
+    "threshold": 0.39141464692488276
+  },
+  "B_plus_symptoms": {
+    "algorithm": "LogReg",
+    "threshold": 0.2884162582144681
+  },
+  "C_plus_cognitive_tests": {
+    "algorithm": "RandomForest",
+    "threshold": 0.5153503287249633
+  }
+}

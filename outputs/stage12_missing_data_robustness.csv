@@ -1,0 +1,13 @@
+feature_set,missing %,pr_auc,roc_auc,recall,precision
+A_screening,0,0.404,0.528,0.914,0.349
+A_screening,10,0.401,0.536,0.921,0.351
+A_screening,20,0.383,0.509,0.954,0.351
+A_screening,30,0.398,0.526,0.941,0.346
+B_plus_symptoms,0,0.558,0.678,0.908,0.371
+B_plus_symptoms,10,0.551,0.672,0.901,0.36
+B_plus_symptoms,20,0.512,0.627,0.875,0.345
+B_plus_symptoms,30,0.515,0.633,0.901,0.353
+C_plus_cognitive_tests,0,0.915,0.939,0.921,0.946
+C_plus_cognitive_tests,10,0.865,0.916,0.842,0.859
+C_plus_cognitive_tests,20,0.8,0.868,0.704,0.811
+C_plus_cognitive_tests,30,0.794,0.866,0.724,0.809

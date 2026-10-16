@@ -1,0 +1,10 @@
+feature_set,model,data,pr_auc,roc_auc,recall,precision,f1,balanced_acc,specificity
+A_screening,LogReg,train (in-sample),0.43,0.591,0.933,0.365,0.525,0.522,0.112
+A_screening,LogReg,CV out-of-fold,0.389,0.542,0.901,0.354,0.509,0.501,0.101
+A_screening,LogReg,TEST (held out),0.404,0.528,0.914,0.349,0.505,0.491,0.068
+B_plus_symptoms,LogReg,train (in-sample),0.618,0.736,0.938,0.391,0.552,0.57,0.202
+B_plus_symptoms,LogReg,CV out-of-fold,0.587,0.705,0.901,0.377,0.532,0.544,0.186
+B_plus_symptoms,LogReg,TEST (held out),0.558,0.678,0.908,0.371,0.527,0.533,0.158
+C_plus_cognitive_tests,RandomForest,train (in-sample),0.985,0.992,0.926,0.954,0.94,0.951,0.976
+C_plus_cognitive_tests,RandomForest,CV out-of-fold,0.93,0.956,0.901,0.95,0.925,0.938,0.974
+C_plus_cognitive_tests,RandomForest,TEST (held out),0.915,0.939,0.921,0.946,0.933,0.946,0.971

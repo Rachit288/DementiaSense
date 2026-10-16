@@ -1,0 +1,62 @@
+{
+  "A_screening|LogReg": {
+    "C": 0.9846738873614566
+  },
+  "A_screening|SVM_RBF": {
+    "C": 0.017073967431528128,
+    "gamma": 0.29154431891537513
+  },
+  "A_screening|RandomForest": {
+    "n_estimators": 200,
+    "min_samples_leaf": 2,
+    "max_features": 0.5,
+    "max_depth": 12
+  },
+  "A_screening|HistGB": {
+    "l2_regularization": 0.03148911647956861,
+    "learning_rate": 0.2536999076681772,
+    "max_iter": 300,
+    "max_leaf_nodes": 8,
+    "min_samples_leaf": 10
+  },
+  "B_plus_symptoms|LogReg": {
+    "C": 0.9846738873614566
+  },
+  "B_plus_symptoms|SVM_RBF": {
+    "C": 21.368329072358772,
+    "gamma": 0.0007068974950624604
+  },
+  "B_plus_symptoms|RandomForest": {
+    "n_estimators": 200,
+    "min_samples_leaf": 20,
+    "max_features": "sqrt",
+    "max_depth": 8
+  },
+  "B_plus_symptoms|HistGB": {
+    "l2_regularization": 0.050190728339613175,
+    "learning_rate": 0.02028406763400795,
+    "max_iter": 200,
+    "max_leaf_nodes": 8,
+    "min_samples_leaf": 40
+  },
+  "C_plus_cognitive_tests|LogReg": {
+    "C": 0.0745934328572655
+  },
+  "C_plus_cognitive_tests|SVM_RBF": {
+    "C": 21.368329072358772,
+    "gamma": 0.0007068974950624604
+  },
+  "C_plus_cognitive_tests|RandomForest": {
+    "n_estimators": 200,
+    "min_samples_leaf": 10,
+    "max_features": 0.5,
+    "max_depth": 8
+  },
+  "C_plus_cognitive_tests|HistGB": {
+    "l2_regularization": 0.2537815508265665,
+    "learning_rate": 0.11114989443094977,
+    "max_iter": 200,
+    "max_leaf_nodes": 8,
+    "min_samples_leaf": 20
+  }
+}

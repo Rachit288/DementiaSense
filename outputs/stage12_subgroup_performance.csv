@@ -1,0 +1,14 @@
+variable,level,n,positives,recall,precision,pr_auc
+Gender,0,210,80,0.925,0.374,0.425
+Gender,1,220,72,0.903,0.325,0.4
+Ethnicity,0,263,97,0.969,0.373,0.406
+Ethnicity,1,80,24,0.667,0.239,0.382
+Ethnicity,2,50,18,1.0,0.36,0.53
+Ethnicity,3,37,13,0.846,0.379,0.432
+EducationLevel,0,90,33,0.939,0.36,0.464
+EducationLevel,1,174,67,0.925,0.378,0.435
+EducationLevel,2,118,40,0.925,0.336,0.381
+EducationLevel,3,48,12,0.75,0.237,0.271
+AgeGroup,<70,139,48,0.979,0.351,0.381
+AgeGroup,70-79,144,45,0.867,0.293,0.386
+AgeGroup,80+,147,59,0.898,0.405,0.483

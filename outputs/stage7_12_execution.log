@@ -1,0 +1,88 @@
+START 09:45:30 cells=42
+--- cell 1 begin 09:45:30 :: import warnings, random, platform, json, functools
+--- cell 1 ok in 2.1s
+--- cell 2 begin 09:45:33 :: # =========================== CONFIG ===========================
+--- cell 2 ok in 0.0s
+--- cell 3 begin 09:45:33 :: # ---------- Load the Stage 4 hand-off (created by the Stages 2-6 notebook) ----
+--- cell 3 ok in 0.0s
+--- cell 5 begin 09:45:33 :: CARDIO_COLS = ["CardiovascularDisease", "Diabetes", "Hypertension"]
+--- cell 5 ok in 0.0s
+--- cell 6 begin 09:45:33 :: # ---------- Redundancy check: engineered features vs the raw features they come
+--- cell 6 ok in 0.0s
+--- cell 7 begin 09:45:33 :: # ---------- Feature relevance ranking: mutual information (train only) --------
+--- cell 7 ok in 0.4s
+--- cell 9 begin 09:45:33 :: MODEL_NAMES = ["LogReg", "SVM_RBF", "RandomForest", "HistGB"]
+--- cell 9 ok in 20.0s
+--- cell 10 begin 09:45:53 :: # ---------- Decision aid ----------
+--- cell 10 ok in 0.0s
+--- cell 11 begin 09:45:53 :: # ---------- YOUR decision (defaults follow the rule above; override if you can 
+--- cell 11 ok in 0.0s
+--- cell 14 begin 09:45:53 :: def baseline_pipe(features, name):
+--- cell 14 ok in 1.2s
+--- cell 17 begin 09:45:54 :: rows = []
+--- cell 17 ok in 7.0s
+--- cell 18 begin 09:46:01 :: piv9 = exp9.pivot(index="model", columns="feature_set", values="pr_auc")[TUNE_SE
+--- cell 18 ok in 0.2s
+--- cell 21 begin 09:46:01 :: PARAM_DISTS = {
+--- cell 21 ok in 74.3s
+--- cell 22 begin 09:47:16 :: def clean(v):
+--- cell 22 ok in 0.0s
+--- cell 25 begin 09:47:16 :: FINAL_MODEL_OVERRIDE = {}   # e.g. {"A_screening": "LogReg"}  (only with a writt
+--- cell 25 ok in 2.3s
+--- cell 26 begin 09:47:18 :: # ---------- 11.1 Training vs cross-validation vs test (final model) ----------
+--- cell 26 ok in 0.1s
+--- cell 27 begin 09:47:18 :: # ---------- 11.2 Final vs baseline on the test set ----------
+--- cell 27 ok in 0.1s
+--- cell 28 begin 09:47:18 :: # ---------- 11.3 Bootstrap 95% confidence intervals on the test set ----------
+--- cell 28 ok in 11.8s
+--- cell 29 begin 09:47:30 :: # ---------- 11.4 Curves, threshold, confusion matrices, calibration ----------
+--- cell 29 ok in 1.9s
+--- cell 30 begin 09:47:32 :: # ---------- 11.5 Explainability: permutation importance on the test set (explan
+--- cell 30 ok in 5.6s
+--- cell 31 begin 09:47:38 :: # ---------- 11.6 Error analysis (primary screening model) ----------
+--- cell 31 ok in 0.0s
+--- cell 32 begin 09:47:38 :: # ---------- 11.7 Save final models and metrics ----------
+--- cell 32 ok in 0.1s
+--- cell 35 begin 09:47:38 :: # ---------- 12.1 Robustness to incomplete inputs (simulated missing values in t
+--- cell 35 ok in 0.2s
+--- cell 36 begin 09:47:38 :: # ---------- 12.2 Subgroup performance (primary screening model) ----------
+--- cell 36 ok in 0.0s
+--- cell 37 begin 09:47:38 :: # ---------- 12.3 Inference demo: how the saved model would score a NEW patient 
+--- cell 37 ok in 0.0s
+--- cell 40 begin 09:47:38 :: print("Seed:", SEED, "| Python", platform.python_version(), "| scikit-learn", sk
+--- cell 40 ok in 0.0s
+ALL CODE CELLS OK 09:47:38
+artifact outputs/feature_config.json
+artifact outputs/figures/04_outlier_boxplots.png
+artifact outputs/figures/05_class_distribution.png
+artifact outputs/figures/06_age_trend.png
+artifact outputs/figures/06_binary_prevalence.png
+artifact outputs/figures/06_correlation_heatmap.png
+artifact outputs/figures/06_diagnosis_rate_by_category.png
+artifact outputs/figures/06_top_continuous_by_target.png
+artifact outputs/figures/06_univariate_continuous.png
+artifact outputs/figures/07_mutual_information.png
+artifact outputs/figures/09_model_comparison.png
+artifact outputs/figures/11_calibration.png
+artifact outputs/figures/11_confusion_matrices.png
+artifact outputs/figures/11_permutation_importance.png
+artifact outputs/figures/11_roc_pr_test.png
+artifact outputs/figures/11_threshold_choice.png
+artifact outputs/models/final_A_screening.joblib
+artifact outputs/models/final_B_plus_symptoms.joblib
+artifact outputs/models/final_C_plus_cognitive_tests.joblib
+artifact outputs/stage10_best_params.json
+artifact outputs/stage10_tuning_summary.csv
+artifact outputs/stage11_final_vs_baseline_test.csv
+artifact outputs/stage11_test_bootstrap_ci.csv
+artifact outputs/stage11_train_cv_test.csv
+artifact outputs/stage12_missing_data_robustness.csv
+artifact outputs/stage12_subgroup_performance.csv
+artifact outputs/stage5_balancing_cv_results.csv
+artifact outputs/stage7_decisions.json
+artifact outputs/stage7_feature_experiment.csv
+artifact outputs/stage8_baseline_cv.csv
+artifact outputs/stage9_model_comparison_cv.csv
+artifact outputs/test.csv
+artifact outputs/thresholds.json
+artifact outputs/train.csv
